@@ -142,6 +142,25 @@ public class Animal
         
         // TODO: finish this...
         
+     // sets the value to true if the colors are equal
+        boolean isColor = this.getColor().equals(otherAni.getColor());
+        
+        // sets the value to true if the names are equal
+        boolean isName = this.getName().equals(otherAni.getName());
+        
+        // sets the value to true if the weights are equal
+        boolean isWeight = this.getWeight() == otherAni.getWeight();
+        
+        // sets the value to true if the heights are equal 
+        boolean isHeight = this.getHeight() == otherAni.getHeight();
+        
+        if(isColor && isName && isWeight && isHeight)
+        {
+        	return true;
+        }
+        
         /* return TODO; */
+        
+        return false;
     }
 }
